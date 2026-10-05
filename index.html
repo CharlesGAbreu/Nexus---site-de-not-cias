@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus — O seu portal de Games e E-sports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-content">
+            <div class="live-info">
+                <span class="live-badge">● AO VIVO</span>
+                <span id="relogio">A carregar hora...</span>
+            </div>
+            <button id="botao-tema" class="btn-theme" aria-label="Alternar tema escuro/claro">
+                🌙 Escuro
+            </button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-content">
+            <a href="#" class="logo">NEXUS</a>
+            <ul class="nav-links">
+                <li><a href="#">PC</a></li>
+                <li><a href="#">Console</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">E-sports</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="campo-pesquisa" placeholder="Pesquisar notícias..." aria-label="Pesquisar notícias">
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <article class="hero-main">
+                <img src="https://picsum.photos/seed/hero/800/600" alt="Setup gamer" class="hero-img">
+                <span class="category-tag tag-pc">PC</span>
+                <h2><a href="#">Novo motor gráfico promete fotorrealismo inédito em jogos de mundo aberto</a></h2>
+                <p class="meta">Por Alex Silva • 29 set 2026 • 5 min de leitura</p>
+            </article>
+            <aside class="hero-side">
+                <article class="side-news">
+                    <span class="rank">1</span>
+                    <div class="side-content">
+                        <h3><a href="#">Campeonato mundial de MOBA quebra recorde histórico de audiência</a></h3>
+                        <p class="meta">E-sports • 28 set 2026</p>
+                    </div>
+                </article>
+                <article class="side-news">
+                    <span class="rank">2</span>
+                    <div class="side-content">
+                        <h3><a href="#">Console de nova geração tem especificações vazadas em fórum</a></h3>
+                        <p class="meta">Console • 27 set 2026</p>
+                    </div>
+                </article>
+                <article class="side-news">
+                    <span class="rank">3</span>
+                    <div class="side-content">
+                        <h3><a href="#">Os 10 melhores jogos mobile para jogar sem internet em viagens</a></h3>
+                        <p class="meta">Mobile • 26 set 2026</p>
+                    </div>
+                </article>
+            </aside>
+        </section>
+
+        <section class="latest-news">
+            <header class="latest-header">
+                <h2>Últimas Atualizações</h2>
+                <div class="filters" id="filtros-categoria">
+                    <button class="filter-btn active" data-filter="Todas">Todas</button>
+                    <button class="filter-btn" data-filter="PC">PC</button>
+                    <button class="filter-btn" data-filter="Console">Console</button>
+                    <button class="filter-btn" data-filter="E-sports">E-sports</button>
+                </div>
+            </header>
+            
+            <div class="news-grid" id="grade-noticias">
+            </div>
+            
+            <div class="load-more-container">
+                <button id="carregar-mais" class="btn-outline">Carregar mais</button>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Suba de nível com a nossa Newsletter</h2>
+                <p>Receba os melhores reviews e notícias de e-sports todas as sextas-feiras. Zero spam.</p>
+                <form id="formulario-newsletter" class="form-group">
+                    <input type="email" id="campo-email" placeholder="seu.melhor@email.com" required>
+                    <button type="submit" class="btn-primary">Inscrever-se</button>
+                </form>
+                <p id="mensagem-formulario" class="form-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>© 2026 Nexus Portal de Games. Projeto académico.</p>
+            <ul class="footer-links">
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Privacidade</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
